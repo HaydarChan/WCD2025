@@ -8,6 +8,7 @@ import {
   FiX,
   FiChevronDown,
 } from "react-icons/fi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,9 +50,9 @@ const Navbar = () => {
         </button>
 
         {/* Logo */}
-        <span className="text-2xl font-bold font-garamond italic pr-5">
+        <Link href="/" className="text-2xl font-bold font-garamond italic pr-5">
           ReWear
-        </span>
+        </Link>
 
         {/* Desktop menu */}
         <ul className="hidden lg:flex items-center gap-6 text-sm text-gray-700 relative">
@@ -59,18 +60,24 @@ const Navbar = () => {
             Shop ▼
             <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <ul className="space-y-2 text-sm">
-                <li>Men's Fashion</li>
-                <li>Women's Fashion</li>
-                <li>Accessories</li>
-                <li>Shoes</li>
-                <li>Outerwear</li>
+                <li className="border-b-[1px] pb-2 hover:font-bold">
+                  Men's Fashion
+                </li>
+                <li className="border-b-[1px] pb-2 hover:font-bold">
+                  Women's Fashion
+                </li>
+                <li className="border-b-[1px] pb-2 hover:font-bold">
+                  Accessories
+                </li>
+                <li className="border-b-[1px] pb-2 hover:font-bold">Shoes</li>
+                <li className="hover:font-bold">Outerwear</li>
               </ul>
             </div>
           </li>
 
-          <li className="cursor-pointer">On Sale</li>
-          <li className="cursor-pointer">New Arrivals</li>
-          <li className="cursor-pointer">Brands</li>
+          <li className="cursor-pointer">Catalog</li>
+          <li className="cursor-pointer">Education</li>
+          <li className="cursor-pointer">Trade</li>
         </ul>
       </div>
 
@@ -83,7 +90,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search for products..."
-            className="w-full bg-gray-100 rounded-full px-5 py-2 text-sm focus:outline-none"
+            className="w-full bg-gray-100 font-light rounded-full px-5 py-2 text-sm focus:outline-none"
           />
         </div>
       )}
@@ -93,7 +100,7 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Search for products..."
-          className="w-full bg-gray-100 rounded-full px-5 py-2 text-sm focus:outline-none"
+          className="w-full bg-gray-100 font-light rounded-full px-5 py-2 text-sm focus:outline-none"
         />
       </div>
 
@@ -117,9 +124,9 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className={`fixed inset-0 bg-[#e9e9e7] z-50 p-6 ${menuAnimation}`}>
           <div className="flex justify-between items-center mb-8">
-            <span className="text-2xl font-bold font-garamond italic">
+            <Link href="/" className="text-2xl font-bold font-garamond italic">
               ReWear
-            </span>
+            </Link>
             <button onClick={closeMenu}>
               <FiX size={24} />
             </button>
@@ -139,10 +146,16 @@ const Navbar = () => {
               </button>
               {isMobileShopOpen && (
                 <ul className="pl-4 mt-2 space-y-2 text-base text-gray-600">
-                  <li>Men's Fashion</li>
-                  <li>Women's Fashion</li>
-                  <li>Accessories</li>
-                  <li>Shoes</li>
+                  <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
+                    Men's Fashion
+                  </li>
+                  <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
+                    Women's Fashion
+                  </li>
+                  <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
+                    Accessories
+                  </li>
+                  <li className="pb-2 border-b-2 border-b-[#d6d6d6]">Shoes</li>
                   <li>Outerwear</li>
                 </ul>
               )}

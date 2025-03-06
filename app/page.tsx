@@ -17,7 +17,7 @@ const page = () => {
       <NewArrivals />
       <TodayAuction />
       <BrowseStyle />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };
