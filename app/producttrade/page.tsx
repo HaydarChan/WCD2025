@@ -12,6 +12,7 @@ import { FiMapPin } from "react-icons/fi";
 import { Card, CardContent } from "@/components/ui/card";
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
+import { IoIosClose } from "react-icons/io";
 
 const images = ["/shirt1.png", "/shirt2.png", "/shirt3.png"];
 const comments = [
@@ -45,6 +46,8 @@ const page = () => {
       stars: Math.floor(Math.random() * 2) + 4, // Random between 3-5
     }));
   }, []);
+  const [isTradeOpen, setIsTradeOpen] = useState(false);
+
   //   const [quantity, setQuantity] = useState(1);
 
   //   const decrease = () => {
@@ -91,17 +94,6 @@ const page = () => {
           <h1 className="text-2xl md:text-3xl font-bold">
             One Life Graphic T-Shirt
           </h1>
-          <div className="flex gap-3 items-end">
-            <h1 className="text-xl md:text-3xl font-bold bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] inline-block text-transparent bg-clip-text">
-              Rp260.000
-            </h1>
-            <h1 className="text-base md:text-xl font-semibold text-gray-400 line-through">
-              Rp300.000
-            </h1>
-            <p className="text-xs mb-1 md:text-sm text-red-500 bg-red-100 px-3 rounded-full">
-              -10%
-            </p>
-          </div>
 
           <div className="flex gap-3">
             <button className="text-xs lg:text-sm py-2 px-3 md:px-5 font-light border-[1px] rounded-full w-fit border-[#9e9e9c] text-[#595957]    ">
@@ -177,8 +169,11 @@ const page = () => {
             <button className="flex gap-3 items-center justify-center text-sm md:text-base py-2 px-3 md:px-5 bg-[#cccccc] rounded-full">
               <BsChatLeftText /> Chat
             </button>
-            <button className="text-sm text-white md:text-base py-2 px-3 md:px-5 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] rounded-full">
-              Add to Cart
+            <button
+              onClick={() => setIsTradeOpen(true)}
+              className="text-sm text-white md:text-base py-2 px-3 md:px-5 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] rounded-full"
+            >
+              Offer Trade
             </button>
           </div>
         </div>
@@ -325,6 +320,85 @@ const page = () => {
           </div>
         </div>
       </div>
+      {isTradeOpen && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-10 pt-16 w-[90%] max-w-4xl max-h-[90vh] overflow-hidden relative">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsTradeOpen(false)}
+              className="absolute top-4 right-4 text-gray-600 hover:text-black text-xl"
+            >
+              <IoIosClose className="text-4xl" />
+            </button>
+
+            {/* Form Layout */}
+            <div className="flex flex-col md:flex-row gap-6 h-full">
+              {/* Image Upload */}
+              <div className="w-full md:w-1/2 flex flex-col gap-3">
+                <label className="text-sm font-semibold">Upload Image</label>
+                <input type="file" className="border p-2 rounded-md w-full" />
+              </div>
+
+              {/* Inputs (scrollable if long) */}
+              <div className="w-full md:w-1/2 flex flex-col gap-3 overflow-y-auto max-h-[70vh] pr-2">
+                <label className="text-sm font-semibold">Name</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Product Name"
+                />
+
+                <label className="text-sm font-semibold">Size</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Size"
+                />
+
+                <label className="text-sm font-semibold">Color</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Color"
+                />
+
+                <label className="text-sm font-semibold">Condition</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Product's Condition"
+                />
+
+                <label className="text-sm font-semibold">Details</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Product's Details"
+                />
+
+                <label className="text-sm font-semibold">Flaws</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Product's Flaws"
+                />
+
+                <label className="text-sm font-semibold">Location</label>
+                <input
+                  type="text"
+                  className="border p-2 rounded-md placeholder:font-light"
+                  placeholder="Location"
+                />
+
+                <button className="mt-4 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] text-white py-2 rounded-md">
+                  Submit Trade
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </main>
   );

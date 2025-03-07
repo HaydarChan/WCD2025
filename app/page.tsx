@@ -12,11 +12,11 @@ const page = () => {
     <main className="bg-[#e9e9e7]">
       <Navbar />
       <Hero />
-      <Support />
-      <Ads />
-      <NewArrivals />
-      <TodayAuction />
       <BrowseStyle />
+      {/* <Ads /> */}
+      <TodayAuction />
+      <NewArrivals />
+      <Support />
       <Footer />
     </main>
   );

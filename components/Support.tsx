@@ -55,10 +55,10 @@ const Support = () => {
 
   return (
     <section>
-      <div className="bg-[#be8c72] p-10 flex flex-col items-center">
-        <div className="flex gap-3 text-white pb-10 items-center justify-center">
+      <div className="p-10 flex flex-col items-center">
+        <div className="flex gap-3 text-[#5f523e] pb-10 items-center justify-center">
           <h1 className="text-3xl md:text-5xl tracking-tight">Our happy</h1>
-          <h1 className="text-4xl md:text-6xl font-garamond italic bg-gradient-to-r from-[#ffffff] to-[#e9e9e7] inline-block text-transparent bg-clip-text">
+          <h1 className="text-4xl md:text-6xl font-garamond italic bg-gradient-to-r from-[#b04e1d] to-[#7b3410] inline-block text-transparent bg-clip-text tracking-tight">
             customers
           </h1>
         </div>
@@ -72,7 +72,7 @@ const Support = () => {
             {feedbacksWithStars.map((feedback, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full bg-[#e9e9e7] transition-transform duration-300 border-[#9a715b] border-[1px]">
+                  <Card className="h-full bg-stone-100 transition-transform duration-300 border-stone-200 border-[1px]">
                     <CardContent className="flex flex-col items-start justify-start p-6 h-full ">
                       {/* Randomized Stars */}
                       <div className="flex text-yellow-500 gap-1 pb-5">

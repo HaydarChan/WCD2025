@@ -112,9 +112,9 @@ const Navbar = () => {
         >
           <FiSearch size={20} />
         </button>
-        <button>
+        <Link href="/cart">
           <FiShoppingCart size={20} />
-        </button>
+        </Link>
         <button>
           <FiUser size={20} />
         </button>

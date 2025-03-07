@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMemo } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,6 +12,7 @@ import { FiMapPin } from "react-icons/fi";
 import { Card, CardContent } from "@/components/ui/card";
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
+import { IoIosClose } from "react-icons/io";
 
 const images = ["/shirt1.png", "/shirt2.png", "/shirt3.png"];
 const comments = [
@@ -45,6 +46,37 @@ const page = () => {
       stars: Math.floor(Math.random() * 2) + 4, // Random between 3-5
     }));
   }, []);
+  const [isBidModalOpen, setIsBidModalOpen] = useState(false);
+  const [bidAmount, setBidAmount] = useState(270000); // Starts at min bid
+
+  const increaseBid = () => setBidAmount(bidAmount + 10000);
+  const decreaseBid = () => {
+    if (bidAmount > 270000) setBidAmount(bidAmount - 10000);
+  };
+  const [timeLeft, setTimeLeft] = useState(3600); // Example: 1 hour (3600 seconds)
+
+  // Format the time (HH:MM:SS)
+  const formatTime = (seconds: number) => {
+    const h = Math.floor(seconds / 3600)
+      .toString()
+      .padStart(2, "0");
+    const m = Math.floor((seconds % 3600) / 60)
+      .toString()
+      .padStart(2, "0");
+    const s = Math.floor(seconds % 60)
+      .toString()
+      .padStart(2, "0");
+    return `${h}:${m}:${s}`;
+  };
+
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
   //   const [quantity, setQuantity] = useState(1);
 
   //   const decrease = () => {
@@ -78,7 +110,10 @@ const page = () => {
         </div>
 
         {/* Main Image */}
-        <div className="order-1 xl:order-2 flex items-center justify-center">
+        <div className="relative order-1 xl:order-2 flex items-start lg:mt-7 justify-center">
+          <div className="absolute top-3 left-3 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] text-white font-semibold px-2 py-1 rounded-full">
+            {timeLeft > 0 ? `${formatTime(timeLeft)}` : "Auction Ended"}
+          </div>
           <img
             src={selectedImage}
             alt="Selected Product"
@@ -91,16 +126,13 @@ const page = () => {
           <h1 className="text-2xl md:text-3xl font-bold">
             One Life Graphic T-Shirt
           </h1>
-          <div className="flex gap-3 items-end">
+          <div>
+            <p className="font-light text-xs md:text-sm"> Open Bid </p>
+            <h1 className="mb-3 text-sm md:text-base">Rp50.000</h1>
+            <p className="font-light text-xs md:text-sm"> Current Bid </p>
             <h1 className="text-xl md:text-3xl font-bold bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] inline-block text-transparent bg-clip-text">
               Rp260.000
             </h1>
-            <h1 className="text-base md:text-xl font-semibold text-gray-400 line-through">
-              Rp300.000
-            </h1>
-            <p className="text-xs mb-1 md:text-sm text-red-500 bg-red-100 px-3 rounded-full">
-              -10%
-            </p>
           </div>
 
           <div className="flex gap-3">
@@ -177,8 +209,11 @@ const page = () => {
             <button className="flex gap-3 items-center justify-center text-sm md:text-base py-2 px-3 md:px-5 bg-[#cccccc] rounded-full">
               <BsChatLeftText /> Chat
             </button>
-            <button className="text-sm text-white md:text-base py-2 px-3 md:px-5 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] rounded-full">
-              Add to Cart
+            <button
+              onClick={() => setIsBidModalOpen(true)}
+              className="text-sm text-white md:text-base py-2 px-3 md:px-5 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] rounded-full"
+            >
+              Place Bid
             </button>
           </div>
         </div>
@@ -325,6 +360,63 @@ const page = () => {
           </div>
         </div>
       </div>
+      {isBidModalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-6 w-[90%] max-w-md relative">
+            {/* Close button */}
+            <button
+              onClick={() => setIsBidModalOpen(false)}
+              className="absolute top-3 right-3 text-4xl"
+            >
+              <IoIosClose />
+            </button>
+
+            <h1 className="text-xl font-bold mb-4">Place Your Bid</h1>
+
+            {/* Current bid */}
+            <div className="text-sm mb-4">
+              <p>
+                Current Bid: <span className="font-semibold">Rp260.000</span>
+              </p>
+              <p>
+                Minimum Next Bid:{" "}
+                <span className="font-semibold">Rp270.000</span>
+              </p>
+            </div>
+
+            {/* Bid adjuster */}
+            <div className="flex items-center justify-center bg-gray-100 rounded-full py-2 px-4 mb-6">
+              <button
+                onClick={decreaseBid}
+                className="text-xl font-bold px-3 hover:opacity-70"
+              >
+                −
+              </button>
+              <span className="text-lg font-semibold px-6">
+                Rp{bidAmount.toLocaleString()}
+              </span>
+              <button
+                onClick={increaseBid}
+                className="text-xl font-bold px-3 hover:opacity-70"
+              >
+                +
+              </button>
+            </div>
+
+            {/* Confirm button */}
+            <button
+              onClick={() => {
+                // Handle bid submit logic here
+                setIsBidModalOpen(false);
+              }}
+              className="w-full text-white bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] py-2 rounded-full font-medium"
+            >
+              Confirm Bid
+            </button>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </main>
   );
