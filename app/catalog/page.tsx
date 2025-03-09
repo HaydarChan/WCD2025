@@ -248,7 +248,6 @@ const page = () => {
       </div>
 
       <Footer />
-
     </main>
   );
 };
