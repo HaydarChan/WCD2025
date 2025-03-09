@@ -2,12 +2,15 @@
 // Library Import
 import { useState } from "react";
 // Components Import
-import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import AuctionCard from "@/components/AuctionCard";
 import TradeCard from "@/components/TradeCard";
+import { Button } from "@/components/ui/button";
+import AddProductModal from "@/components/catalog/AddProductModal";
+import AddTradeModal from "@/components/catalog/AddTradeModal";
+import AddAuctionModal from "@/components/catalog/AddAuctionModal";
 
 const products = [
   {
@@ -106,7 +109,6 @@ const trades = [
   },
 ];
 
-
 const page = () => {
   const [productList, setProductList] = useState(products)
   const [auctionList, setAuctionList] = useState(auctions)
@@ -125,9 +127,12 @@ const page = () => {
             catalog
           </span>
         </p>
+        
         <div className="w-[150px] h-[1px] bg-neutral-400 mb-8" />
+
         {/* Product Category */}
         <div className="flex flex-col gap-y-12">
+          
           {/* Product */}
           <div className="space-y-4">
             <div>
@@ -137,14 +142,13 @@ const page = () => {
               </p>
             </div>
             <div className="w-full overflow-x-auto scrollbar-hide relative">
-              <div className="flex gap-5 pt-5 min-w-[1000px] overflow-visible items-stretch">
+              <div className="flex gap-5 pt-5 overflow-visible items-stretch lg:grid lg:grid-cols-5">
                 
                 {/* Add Product Button */}
                 <div className="flex items-center justify-center border-2 border-orange-500 border-dashed rounded-xl bg-orange-50/25 hover:bg-orange-100/25 min-w-[200px]">
-                  <Button className="text-3xl bg-transparent shadow-none text-orange-400 hover:bg-transparent flex flex-col items-center justify-center text-center gap-1">
-                    <span>+</span>
-                    <span className="text-base">Add a Product</span>
-                  </Button>
+                  <AddProductModal 
+                    setProductList={setProductList}
+                  />
                 </div>
 
                 {/* Product Cards */}
@@ -176,14 +180,13 @@ const page = () => {
               </p>
             </div>
             <div className="w-full overflow-x-auto scrollbar-hide relative">
-              <div className="flex gap-5 pt-5 min-w-[1000px] overflow-visible items-stretch">
+              <div className="flex gap-5 pt-5 min-w-[1000px] overflow-visible items-stretch lg:grid lg:grid-cols-3">
 
                 {/* Add Auction Product Button */}
                 <div className="flex items-center justify-center border-2 border-orange-500 border-dashed rounded-xl bg-orange-50/25 hover:bg-orange-100/25 min-w-[200px]">
-                  <Button className="bg-transparent shadow-none text-orange-400 hover:bg-transparent flex flex-col items-center justify-center text-center gap-1">
-                    <span className="text-3xl">+</span>
-                    <span className="text-base">Add an Auction Product</span>
-                  </Button>
+                  <AddAuctionModal 
+                    setAuctionList={setAuctionList}
+                  />
                 </div>
 
                 {/* Auction Cards */}
@@ -216,14 +219,13 @@ const page = () => {
               </p>
             </div>
             <div className="w-full overflow-x-auto scrollbar-hide relative">
-              <div className="flex gap-5 pt-5 min-w-[1000px] overflow-visible items-stretch">
+              <div className="flex gap-5 pt-5 min-w-[1000px] overflow-visible items-stretch lg:grid lg:grid-cols-5">
 
                 {/* Add Trade Product Button */}
                 <div className="flex items-center justify-center border-2 border-orange-500 border-dashed rounded-xl bg-orange-50/25 hover:bg-orange-100/25 min-w-[200px]">
-                  <Button className="bg-transparent shadow-none text-orange-400 hover:bg-transparent flex flex-col items-center justify-center text-center gap-1">
-                    <span className="text-3xl">+</span>
-                    <span className="text-base">Add a Trade Product</span>
-                  </Button>
+                  <AddTradeModal 
+                    setTradeList={setTradeList}
+                  />
                 </div>
 
                 {/* Trade Cards */}
@@ -246,6 +248,7 @@ const page = () => {
       </div>
 
       <Footer />
+
     </main>
   );
 };
