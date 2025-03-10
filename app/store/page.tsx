@@ -174,96 +174,96 @@ const page = () => {
                 </div>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-5">
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
-                <ProductCard
-                  name="New Rules Shirt"
-                  image="/product1.png"
-                  price="120.000"
-                  from="200.000"
-                  discount="30"
-                  store="Big Store"
-                  place="West Jakarta"
-                  ongkir={1}
-                />
+              <ProductCard
+                name="Oversized Hoodie"
+                image="/store/store1.png"
+                price="250.000"
+                from="350.000"
+                discount="29"
+                store="Cozy Wear"
+                place="Bandung"
+                ongkir={1}
+              />
+              <ProductCard
+                name="Formal Blazer"
+                image="/store/store2.png"
+                price="400.000"
+                from="600.000"
+                discount="33"
+                store="Elegant Attire"
+                place="Jakarta"
+                ongkir={0}
+              />
+              <ProductCard
+                name="Graphic T-Shirt"
+                image="/store/store3.png"
+                price="180.000"
+                from="250.000"
+                discount="28"
+                store="Urban Streetwear"
+                place="Surabaya"
+                ongkir={1}
+              />
+              <ProductCard
+                name="Slim Fit Jeans"
+                image="/store/store4.png"
+                price="320.000"
+                from="500.000"
+                discount="36"
+                store="Denim Republic"
+                place="Yogyakarta"
+                ongkir={0}
+              />
+              <ProductCard
+                name="Summer Linen Shirt"
+                image="/store/store5.png"
+                price="210.000"
+                from="300.000"
+                discount="30"
+                store="Breezy Styles"
+                place="Bali"
+                ongkir={1}
+              />
+              <ProductCard
+                name="Puffer Jacket"
+                image="/store/store6.png"
+                price="550.000"
+                from="750.000"
+                discount="27"
+                store="Winter Essentials"
+                place="Bandung"
+                ongkir={1}
+              />
+              <ProductCard
+                name="Athleisure Joggers"
+                image="/store/store7.png"
+                price="280.000"
+                from="400.000"
+                discount="30"
+                store="Active Wear"
+                place="Medan"
+                ongkir={0}
+              />
+              <ProductCard
+                name="Classic Polo Shirt"
+                image="/store/store8.png"
+                price="190.000"
+                from="270.000"
+                discount="25"
+                store="Timeless Fashion"
+                place="Semarang"
+                ongkir={1}
+              />
+              <ProductCard
+                name="Longline Cardigan"
+                image="/store/store9.png"
+                price="310.000"
+                from="450.000"
+                discount="31"
+                store="Casual Luxe"
+                place="Yogyakarta"
+                ongkir={1}
+              />
               </div>
             </div>
           )}
