@@ -58,7 +58,7 @@ const EducationPage = () => {
         </p>
 
         {/* Grid Section */}
-        <Link href={"/education/how-to-style-streetwear"} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Link href={"/article/how-to-style-streetwear"} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {educationArticles.map((article, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden">
               <Image src={article.image} alt={article.title} className="w-full h-48 object-cover" />
