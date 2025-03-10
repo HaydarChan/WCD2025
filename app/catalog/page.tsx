@@ -109,7 +109,7 @@ const trades = [
   },
 ];
 
-const page = () => {
+const CatalogPage = () => {
   const [productList, setProductList] = useState(products)
   const [auctionList, setAuctionList] = useState(auctions)
   const [tradeList, setTradeList] = useState(trades)
@@ -252,4 +252,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CatalogPage;

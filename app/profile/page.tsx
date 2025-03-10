@@ -10,7 +10,7 @@ const SidebarMenu = [
   "Password & Security",
 ];
 
-const page = () => {
+const ProfilePage = () => {
   const [activeTab, setActiveTab] = useState("Edit Profile");
 
   return (
@@ -136,4 +136,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProfilePage;

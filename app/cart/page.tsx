@@ -6,7 +6,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import { FiTag } from "react-icons/fi";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const page = () => {
+const CartPage = () => {
   return (
     <main className="bg-[#e9e9e7]">
       <Navbar />
@@ -150,4 +150,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CartPage;

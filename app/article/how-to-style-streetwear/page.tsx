@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 const ArticlePage = () => {
   return (
@@ -13,7 +14,7 @@ const ArticlePage = () => {
         </h1>
         <p className="text-lg text-gray-600 text-center mb-4">By Fashion Experts - March 9, 2025</p>
 
-        <img
+        <Image
           src="/education/education1.png"
           alt="Streetwear Style"
           className="w-full h-80 object-cover rounded-lg shadow-md mb-6"
@@ -28,7 +29,7 @@ const ArticlePage = () => {
 
           <h2 className="text-2xl font-semibold mt-4">1. Start with a Statement Piece</h2>
           <p>
-            Every good streetwear outfit needs a statement piece, whether it's a bold hoodie,
+            Every good streetwear outfit needs a statement piece, whether it&apos;s a bold hoodie,
             graphic t-shirt, or a pair of eye-catching sneakers. Choose something that stands out
             and build your outfit around it.
           </p>

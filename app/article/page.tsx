@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
 // Icons Import
 import { BookOpen } from 'lucide-react';
+import Image from "next/image";
 
 const educationArticles = [
   {
@@ -60,7 +61,7 @@ const EducationPage = () => {
         <Link href={"/education/how-to-style-streetwear"} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {educationArticles.map((article, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden">
-              <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
+              <Image src={article.image} alt={article.title} className="w-full h-48 object-cover" />
               <div className="p-4 flex flex-col w-full justify-between items-start gap-y-2">
                 <div className="flex items-center w-full justify-between">
                   <div className={cn(

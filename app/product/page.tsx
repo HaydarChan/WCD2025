@@ -36,7 +36,7 @@ const comments = [
       "Great store! Item came as expected. Would have given 5 stars if the delivery was a bit quicker.",
   },
 ];
-const page = () => {
+const ProductPage = () => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [isFollowed, setIsFollowed] = useState(false);
   const commentsWithStars = useMemo(() => {
@@ -330,4 +330,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProductPage;

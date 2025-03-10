@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/select";
 import { FaFilter } from "react-icons/fa6";
 
-const page = () => {
+const TradePage = () => {
   return (
     <main className="bg-[#e9e9e7]">
       <Navbar />
@@ -115,4 +115,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TradePage;

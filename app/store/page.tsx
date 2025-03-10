@@ -55,7 +55,7 @@ const comments = [
   },
 ];
 
-const page = () => {
+const StorePage = () => {
   const [isFollowed, setIsFollowed] = useState(false);
   const [activeTab, setActiveTab] = useState("details");
   return (
@@ -365,4 +365,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default StorePage;

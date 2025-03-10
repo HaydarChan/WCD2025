@@ -26,7 +26,7 @@ const chats = [
   },
 ];
 
-const page = () => {
+const ChatPage = () => {
   const [selectedChat, setSelectedChat] = useState<number | null>(null);
 
   return (
@@ -134,4 +134,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ChatPage;

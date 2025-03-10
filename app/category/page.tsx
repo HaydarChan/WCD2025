@@ -13,7 +13,7 @@ const locations = [
   "Medan",
   "Surabaya",
 ];
-const page = () => {
+const CategoryPage = () => {
   const [selectedLocations, setSelectedLocations] = useState<string[]>([]);
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
@@ -268,4 +268,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CategoryPage;

@@ -57,7 +57,7 @@ const orders = [
   },
 ];
 
-const page = () => {
+const HistoryPage = () => {
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
   const [status, setStatus] = useState("");
@@ -221,4 +221,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HistoryPage;
