@@ -31,7 +31,7 @@ const TodayAuction = () => {
               <div className="p-1 h-full">
                 <AuctionCard
                   name="Vintage Leather Bag"
-                  image="/product1.png"
+                  image="/home/auction1.png"
                   openBid="150.000"
                   currentBid="200.000"
                   timeLeft={70000} // 1 hour
@@ -41,63 +41,68 @@ const TodayAuction = () => {
                 />
               </div>
             </CarouselItem>
+
             <CarouselItem className="basis-full lg:basis-1/2 xl:basis-1/3">
               <div className="p-1 h-full">
                 <AuctionCard
-                  name="Vintage Leather Bag"
-                  image="/product1.png"
-                  openBid="150.000"
-                  currentBid="200.000"
-                  timeLeft={70000} // 1 hour
-                  store="ReWear Jakarta"
-                  place="Jakarta, Indonesia"
+                  name="Classic Wristwatch"
+                  image="/home/auction2.png"
+                  openBid="500.000"
+                  currentBid="650.000"
+                  timeLeft={120000} // 2 hours
+                  store="Timeless Pieces"
+                  place="Bandung, Indonesia"
                   ongkir={0}
                 />
               </div>
             </CarouselItem>
+
             <CarouselItem className="basis-full lg:basis-1/2 xl:basis-1/3">
               <div className="p-1 h-full">
                 <AuctionCard
-                  name="Vintage Leather Bag"
-                  image="/product1.png"
-                  openBid="150.000"
-                  currentBid="200.000"
-                  timeLeft={70000} // 1 hour
-                  store="ReWear Jakarta"
-                  place="Jakarta, Indonesia"
+                  name="Limited Edition Sneakers"
+                  image="/home/auction3.png"
+                  openBid="900.000"
+                  currentBid="1.200.000"
+                  timeLeft={180000} // 3 hours
+                  store="Sneaker Hub"
+                  place="Surabaya, Indonesia"
                   ongkir={1}
                 />
               </div>
             </CarouselItem>
+
             <CarouselItem className="basis-full lg:basis-1/2 xl:basis-1/3">
               <div className="p-1 h-full">
                 <AuctionCard
-                  name="Vintage Leather Bag"
-                  image="/product1.png"
-                  openBid="150.000"
-                  currentBid="200.000"
-                  timeLeft={70000} // 1 hour
-                  store="ReWear Jakarta"
-                  place="Jakarta, Indonesia"
+                  name="Luxury Sunglasses"
+                  image="/home/auction4.png"
+                  openBid="250.000"
+                  currentBid="400.000"
+                  timeLeft={54000} // 45 minutes
+                  store="Eyewear Central"
+                  place="Bali, Indonesia"
                   ongkir={1}
                 />
               </div>
             </CarouselItem>
+
             <CarouselItem className="basis-full lg:basis-1/2 xl:basis-1/3">
               <div className="p-1 h-full">
                 <AuctionCard
-                  name="Vintage Leather Bag"
-                  image="/product1.png"
-                  openBid="150.000"
-                  currentBid="200.000"
-                  timeLeft={70000} // 1 hour
-                  store="ReWear Jakarta"
-                  place="Jakarta, Indonesia"
-                  ongkir={1}
+                  name="Designer Handbag"
+                  image="/home/auction5.png"
+                  openBid="1.500.000"
+                  currentBid="2.000.000"
+                  timeLeft={240000} // 4 hours
+                  store="Luxury Goods"
+                  place="Medan, Indonesia"
+                  ongkir={0}
                 />
               </div>
             </CarouselItem>
           </CarouselContent>
+
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>

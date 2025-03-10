@@ -17,56 +17,56 @@ const NewArrivals = () => {
         </div>
         <div className="w-full overflow-x-auto scrollbar-hide relative">
           <div className="flex gap-5 pt-5 min-w-[1000px] overflow-visible">
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={0}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={0}
-            />
+          <ProductCard
+            name="New Rules Shirt"
+            image="/home/product1.png"
+            price="120.000"
+            from="200.000"
+            discount="40"
+            store="Big Store"
+            place="West Jakarta"
+            ongkir={1}
+          />
+          <ProductCard
+            name="Vintage Denim Jacket"
+            image="/home/product2.png"
+            price="350.000"
+            from="500.000"
+            discount="30"
+            store="Retro Wear"
+            place="Bandung"
+            ongkir={0}
+          />
+          <ProductCard
+            name="Casual Sneakers"
+            image="/home/product3.png"
+            price="550.000"
+            from="750.000"
+            discount="25"
+            store="Footwear Hub"
+            place="Surabaya"
+            ongkir={1}
+          />
+          <ProductCard
+            name="Elegant Handbag"
+            image="/home/product4.png"
+            price="700.000"
+            from="1.000.000"
+            discount="30"
+            store="Luxury Bags"
+            place="South Jakarta"
+            ongkir={1}
+          />
+          <ProductCard
+            name="Sporty Watch"
+            image="/home/product5.png"
+            price="850.000"
+            from="1.200.000"
+            discount="29"
+            store="Timepiece Central"
+            place="Medan"
+            ongkir={0}
+          />
           </div>
         </div>
       </div>
