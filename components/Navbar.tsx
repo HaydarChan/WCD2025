@@ -1,5 +1,8 @@
 "use client";
+// Library Import
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
+// Icons Import
 import {
   FiShoppingCart,
   FiUser,
@@ -8,7 +11,6 @@ import {
   FiX,
   FiChevronDown,
 } from "react-icons/fi";
-import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -59,25 +61,66 @@ const Navbar = () => {
           <li className="relative group cursor-pointer">
             Shop ▼
             <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-4 text-sm w-full">
                 <li className="border-b-[1px] pb-2 hover:font-bold">
-                  Men's Fashion
+                  <Link href={"/category"}>
+                    Men's Fashion
+                  </Link>
                 </li>
                 <li className="border-b-[1px] pb-2 hover:font-bold">
-                  Women's Fashion
+                  <Link href={"/category"}>
+                    Women's Fashion
+                  </Link>
+                </li>
+                <li  className="border-b-[1px] pb-2 hover:font-bold">
+                  <Link href={"/category"}>
+                    Accessories
+                  </Link>
                 </li>
                 <li className="border-b-[1px] pb-2 hover:font-bold">
-                  Accessories
+                  <Link href={"/category"}>
+                    Shoes
+                  </Link>
                 </li>
-                <li className="border-b-[1px] pb-2 hover:font-bold">Shoes</li>
-                <li className="hover:font-bold">Outerwear</li>
+                <li className="hover:font-bold">
+                  <Link href={"/category"}>
+                    Outerwear
+                  </Link>
+                </li>
               </ul>
             </div>
           </li>
 
-          <li className="cursor-pointer">Catalog</li>
-          <li className="cursor-pointer">Education</li>
-          <li className="cursor-pointer">Trade</li>
+          <Link 
+            className="cursor-pointer"
+            href={"/catalog"}
+          >
+            Catalog
+          </Link>
+          <Link 
+            className="cursor-pointer"
+            href={"/article"}
+          >
+            Article
+          </Link>
+          <Link 
+            className="cursor-pointer"
+            href={"/trade"}
+          >
+            Trade
+          </Link>
+          <Link 
+            className="cursor-pointer"
+            href={"/history"}
+          >
+            History
+          </Link>
+          <Link 
+            className="cursor-pointer"
+            href={"/chat"}
+          >
+            Chat
+          </Link>
         </ul>
       </div>
 
@@ -115,9 +158,11 @@ const Navbar = () => {
         <Link href="/cart">
           <FiShoppingCart size={20} />
         </Link>
-        <button>
-          <FiUser size={20} />
-        </button>
+        <Link href={"/profile"}>
+          <button>
+            <FiUser size={20} />
+          </button>
+        </Link>
       </div>
 
       {/* Full-screen Mobile Menu */}
@@ -147,22 +192,73 @@ const Navbar = () => {
               {isMobileShopOpen && (
                 <ul className="pl-4 mt-2 space-y-2 text-base text-gray-600">
                   <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
-                    Men's Fashion
+                    <Link href={"/category"}>
+                      Men's Fashion
+                    </Link>
                   </li>
                   <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
-                    Women's Fashion
+                    <Link href={"/category"}>
+                      Women's Fashion
+                    </Link>
                   </li>
                   <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
-                    Accessories
+                    <Link href={"/category"}>
+                      Accessories
+                    </Link>
                   </li>
-                  <li className="pb-2 border-b-2 border-b-[#d6d6d6]">Shoes</li>
-                  <li>Outerwear</li>
+                  <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
+                    <Link href={"/category"}>
+                      Shoes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"/category"}>
+                      Outerwear
+                    </Link>
+                  </li>
                 </ul>
               )}
             </li>
-            <li className="border-b-[#d6d6d6] border-b-2 pb-4">On Sale</li>
-            <li className="border-b-[#d6d6d6] border-b-2 pb-4">New Arrivals</li>
-            <li className="border-b-[#d6d6d6] border-b-2 pb-4">Brands</li>
+            <li>
+              <Link 
+                className="cursor-pointer"
+                href={"/catalog"}
+              >
+                Catalog
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="cursor-pointer"
+                href={"/article"}
+              >
+                Article
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="cursor-pointer"
+                href={"/trade"}
+              >
+                Trade
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="cursor-pointer"
+                href={"/history"}
+              >
+                History
+              </Link>
+            </li>
+            <li>
+              <Link 
+                className="cursor-pointer"
+                href={"/chat"}
+              >
+                Chat
+              </Link>
+            </li>
           </ul>
         </div>
       )}
