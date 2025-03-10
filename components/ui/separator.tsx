@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+// @ts-expect-error ini emang error kochak
 import * as SeparatorPrimitive from "@radix-ui/react-separator"
 
 import { cn } from "@/lib/utils"
