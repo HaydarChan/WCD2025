@@ -272,7 +272,7 @@ const page = () => {
         </h1>
         <div className="w-full overflow-x-auto scrollbar-hide relative">
           <div className="flex gap-5 min-w-[1000px] overflow-visible">
-            <ProductCard
+          <ProductCard
               name="Casual Flannel Shirt"
               image="/product/product1.png"
               price="180.000"

@@ -307,54 +307,54 @@ const page = () => {
         </h1>
         <div className="w-full overflow-x-auto scrollbar-hide relative">
           <div className="flex gap-5 min-w-[1000px] overflow-visible">
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+          <ProductCard
+              name="Casual Flannel Shirt"
+              image="/product/product1.png"
+              price="180.000"
+              from="250.000"
+              discount="28"
+              store="Urban Outfitters"
+              place="Jakarta"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Minimalist Crewneck Sweater"
+              image="/product/product2.png"
+              price="230.000"
+              from="320.000"
+              discount="28"
+              store="Cozy Wear"
+              place="Bandung"
               ongkir={0}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Vintage Leather Jacket"
+              image="/product/product3.png"
+              price="500.000"
+              from="750.000"
+              discount="33"
+              store="Retro Style"
+              place="Surabaya"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Relaxed Fit Cargo Pants"
+              image="/product/product4.png"
+              price="290.000"
+              from="400.000"
+              discount="27"
+              store="Streetwear Hub"
+              place="Medan"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Breathable Cotton Henley"
+              image="/product/product5.png"
+              price="160.000"
+              from="220.000"
+              discount="27"
+              store="Timeless Basics"
+              place="Yogyakarta"
               ongkir={0}
             />
           </div>
