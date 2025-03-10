@@ -1,5 +1,7 @@
 "use client";
+// Library Import
 import Image from "next/image";
+import Link from "next/link";
 
 const categories = [
   { name: "Casual", image: "/casual.png" },
@@ -23,7 +25,7 @@ const BrowseStyle = () => {
 
         <div className="grid gap-4 grid-cols-1 md:grid-cols-12">
           {/* Row 1 */}
-          <div className="relative group rounded-lg overflow-hidden md:col-span-4">
+          <Link href={"/category"} className="relative group rounded-lg overflow-hidden md:col-span-4">
             <Image
               src={categories[0].image}
               alt={categories[0].name}
@@ -35,9 +37,9 @@ const BrowseStyle = () => {
             <span className="font-garamond italic absolute top-3 left-5 text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#b04e1d] to-[#7b3410] inline-block text-transparent bg-clip-text group-hover:text-white transition duration-300">
               {categories[0].name}
             </span>
-          </div>
+          </Link>
 
-          <div className="relative group rounded-lg overflow-hidden md:col-span-8">
+          <Link href={"/category"} className="relative group rounded-lg overflow-hidden md:col-span-8">
             <Image
               src={categories[1].image}
               alt={categories[1].name}
@@ -49,10 +51,10 @@ const BrowseStyle = () => {
             <span className="absolute font-garamond italic top-3 left-5 text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#b04e1d] to-[#7b3410] inline-block text-transparent bg-clip-text group-hover:text-white transition duration-300">
               {categories[1].name}
             </span>
-          </div>
+          </Link>
 
           {/* Row 2 */}
-          <div className="relative group rounded-lg overflow-hidden md:col-span-7">
+          <Link href={"/category"} className="relative group rounded-lg overflow-hidden md:col-span-7">
             <Image
               src={categories[2].image}
               alt={categories[2].name}
@@ -64,9 +66,9 @@ const BrowseStyle = () => {
             <span className="absolute font-garamond italic top-3 left-5 text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#b04e1d] to-[#7b3410] inline-block text-transparent bg-clip-text group-hover:text-white transition duration-300">
               {categories[2].name}
             </span>
-          </div>
+          </Link>
 
-          <div className="relative group rounded-lg overflow-hidden md:col-span-5">
+          <Link href={"/category"} className="relative group rounded-lg overflow-hidden md:col-span-5">
             <Image
               src={categories[3].image}
               alt={categories[3].name}
@@ -78,7 +80,7 @@ const BrowseStyle = () => {
             <span className="absolute font-garamond italic top-3 left-5 text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#b04e1d] to-[#7b3410] inline-block text-transparent bg-clip-text group-hover:text-white transition duration-300">
               {categories[3].name}
             </span>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

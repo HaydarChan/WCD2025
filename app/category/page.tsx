@@ -171,95 +171,95 @@ const page = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Casual Flannel Shirt"
+              image="/product/product1.png"
+              price="180.000"
+              from="250.000"
+              discount="28"
+              store="Urban Outfitters"
+              place="Jakarta"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Minimalist Crewneck Sweater"
+              image="/product/product2.png"
+              price="230.000"
+              from="320.000"
+              discount="28"
+              store="Cozy Wear"
+              place="Bandung"
+              ongkir={0}
+            />
+            <ProductCard
+              name="Vintage Leather Jacket"
+              image="/product/product3.png"
+              price="500.000"
+              from="750.000"
+              discount="33"
+              store="Retro Style"
+              place="Surabaya"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Casual Flannel Shirt"
+              image="/product/product1.png"
+              price="180.000"
+              from="250.000"
+              discount="28"
+              store="Urban Outfitters"
+              place="Jakarta"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
+              name="Minimalist Crewneck Sweater"
+              image="/product/product2.png"
+              price="230.000"
+              from="320.000"
+              discount="28"
+              store="Cozy Wear"
+              place="Bandung"
+              ongkir={0}
+            />
+            <ProductCard
+              name="Vintage Leather Jacket"
+              image="/product/product3.png"
+              price="500.000"
+              from="750.000"
+              discount="33"
+              store="Retro Style"
+              place="Surabaya"
               ongkir={1}
             />
             <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
-            <ProductCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              price="120.000"
-              from="200.000"
-              discount="30"
-              store="Big Store"
-              place="West Jakarta"
-              ongkir={1}
-            />
+            name="Casual Sneakers"
+            image="/home/product3.png"
+            price="550.000"
+            from="750.000"
+            discount="25"
+            store="Footwear Hub"
+            place="Surabaya"
+            ongkir={1}
+          />
+          <ProductCard
+            name="Elegant Handbag"
+            image="/home/product4.png"
+            price="700.000"
+            from="1.000.000"
+            discount="30"
+            store="Luxury Bags"
+            place="South Jakarta"
+            ongkir={1}
+          />
+          <ProductCard
+            name="Sporty Watch"
+            image="/home/product5.png"
+            price="850.000"
+            from="1.200.000"
+            discount="29"
+            store="Timepiece Central"
+            place="Medan"
+            ongkir={0}
+          />
           </div>
         </div>
       </div>
