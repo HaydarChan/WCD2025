@@ -34,7 +34,7 @@ const AddTradeModal = ({ setTradeList }: { setTradeList: (param: TradeItem[]) =>
   };
 
   const handleSubmit = () => {
-    // @ts-ignore
+    // @ts-expect-error kayanya bener deh
     setTradeList((prevList: TradeItem[]) => [...prevList, newTrade]);
     setNewTrade({
       name: "",

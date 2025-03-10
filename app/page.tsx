@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Ads from "@/components/Ads";
 import Support from "@/components/Support";
 import Navbar from "@/components/Navbar";
 import NewArrivals from "@/components/NewArrivals";
@@ -13,7 +12,6 @@ const page = () => {
       <Navbar />
       <Hero />
       <BrowseStyle />
-      {/* <Ads /> */}
       <TodayAuction />
       <NewArrivals />
       <Support />

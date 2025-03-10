@@ -64,12 +64,12 @@ const Navbar = () => {
               <ul className="space-y-4 text-sm w-full">
                 <li className="border-b-[1px] pb-2 hover:font-bold">
                   <Link href={"/category"}>
-                    Men's Fashion
+                    Men&apos;s Fashion
                   </Link>
                 </li>
                 <li className="border-b-[1px] pb-2 hover:font-bold">
                   <Link href={"/category"}>
-                    Women's Fashion
+                    Women&apos;s Fashion
                   </Link>
                 </li>
                 <li  className="border-b-[1px] pb-2 hover:font-bold">
@@ -193,12 +193,12 @@ const Navbar = () => {
                 <ul className="pl-4 mt-2 space-y-2 text-base text-gray-600">
                   <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
                     <Link href={"/category"}>
-                      Men's Fashion
+                      Men&apos;s Fashion
                     </Link>
                   </li>
                   <li className="pb-2 border-b-2 border-b-[#d6d6d6]">
                     <Link href={"/category"}>
-                      Women's Fashion
+                      Women&apos;s Fashion
                     </Link>
                   </li>
                   <li className="pb-2 border-b-2 border-b-[#d6d6d6]">

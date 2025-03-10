@@ -74,8 +74,8 @@ const TradePage = () => {
                 <SelectValue placeholder="Men's Fashion" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="men">Men's Fashion</SelectItem>
-                <SelectItem value="women">Women's Fashion</SelectItem>
+                <SelectItem value="men">Men&apos;s Fashion</SelectItem>
+                <SelectItem value="women">Women&apos;s Fashion</SelectItem>
                 <SelectItem value="acc">Accessories</SelectItem>
                 <SelectItem value="shoes">Shoes</SelectItem>
                 <SelectItem value="out">Outwear</SelectItem>

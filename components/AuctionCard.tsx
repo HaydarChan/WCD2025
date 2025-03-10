@@ -2,6 +2,7 @@
 import { FiHome, FiMapPin } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface AuctionCardProps {
   name: string;
@@ -56,7 +57,7 @@ const AuctionCard = ({
 
         {/* Product Image */}
         <div className="h-full">
-          <img src={image} alt={name} className="w-full h-full object-cover" />
+          <Image src={image} alt={name} className="w-full h-full object-cover" />
         </div>
 
         {/* Content */}

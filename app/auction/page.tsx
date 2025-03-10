@@ -100,7 +100,7 @@ const AuctionPage = () => {
                 selectedImage === img ? "border-black" : "border-transparent"
               } rounded-lg p-2 w-[173px]`}
             >
-              <img
+              <Image
                 src={img}
                 alt={`Thumbnail ${index + 1}`}
                 className="rounded-md object-cover"
@@ -114,7 +114,7 @@ const AuctionPage = () => {
           <div className="absolute top-3 left-3 bg-gradient-to-r from-[#f56b27] to-[#eb8e5f] text-white font-semibold px-2 py-1 rounded-full">
             {timeLeft > 0 ? `${formatTime(timeLeft)}` : "Auction Ended"}
           </div>
-          <img
+          <Image
             src={selectedImage}
             alt="Selected Product"
             className="w-auto rounded-xl"

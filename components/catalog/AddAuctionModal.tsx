@@ -40,7 +40,7 @@ const AddAuctionModal = ({ setAuctionList }: { setAuctionList: (param: AuctionIt
   };
 
   const handleSubmit = () => {
-    // @ts-ignore
+    // @ts-expect-error kayanya bener deh
     setAuctionList((prevList: AuctionItem[]) => [...prevList, newAuction]);
     setNewAuction({
       name: "",

@@ -128,7 +128,7 @@ const CategoryPage = () => {
       <Navbar />
       <div className="relative px-10 md:px-20 lg:px-36 py-10">
         <p className="pr-1 w-fit relative inline-block pb-2 md:pb-4 text-3xl lg:text-5xl mb-5">
-          Men's
+          Men&apos;s
           <span className="font-garamond italic font-bold text-4xl lg:text-6xl ml-2 md:ml-3 tracking-tight">
             Fashion
           </span>

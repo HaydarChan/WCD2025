@@ -40,7 +40,7 @@ const AddProductModal = ({ setProductList }: { setProductList: (param: Product[]
   };
 
   const handleSubmit = () => {
-    //@ts-ignore
+    // @ts-expect-error kayanya bener deh
     setProductList((prevList) => [...prevList, newProduct]);
     setNewProduct({
       name: "",

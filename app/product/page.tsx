@@ -68,7 +68,7 @@ const ProductPage = () => {
                 selectedImage === img ? "border-black" : "border-transparent"
               } rounded-lg p-2 w-[173px]`}
             >
-              <img
+              <Image
                 src={img}
                 alt={`Thumbnail ${index + 1}`}
                 className="rounded-md object-cover"
@@ -79,7 +79,7 @@ const ProductPage = () => {
 
         {/* Main Image */}
         <div className="order-1 xl:order-2 flex items-center justify-center">
-          <img
+          <Image
             src={selectedImage}
             alt="Selected Product"
             className="w-auto rounded-xl"

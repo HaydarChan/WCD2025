@@ -1,6 +1,7 @@
 "use client";
 import { FiHome, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 
 interface TradeCardProps {
   name: string;
@@ -24,7 +25,7 @@ const TradeCard = ({ name, image, store, place, status }: TradeCardProps) => {
 
       <Link href="/producttrade">
         {/* Product Image */}
-        <img src={image} alt={name} className="w-full object-contain" />
+        <Image src={image} alt={name} className="w-full object-contain" />
 
         {/* Content */}
         <div className="p-4">

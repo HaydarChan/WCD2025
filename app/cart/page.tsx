@@ -1,10 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Product from "@/public/product1.png";
-import Image from "next/image";
 import { FaTrashAlt } from "react-icons/fa";
 import { FiTag } from "react-icons/fi";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Image from "next/image";
 
 const CartPage = () => {
   return (
@@ -21,7 +20,7 @@ const CartPage = () => {
         <div className="rounded-lg border-2 border-stone-200 w-full flex flex-col p-4">
           {/* Item 1: Classic Leather Boots */}
           <div className="grid grid-cols-[20%_80%] gap-3 border-b-2 border-stone-200 pb-3">
-            <img
+            <Image
               src="/history/history1.png"
               alt="Classic Leather Boots"
               className="rounded-lg h-full object-cover"
@@ -49,7 +48,7 @@ const CartPage = () => {
 
           {/* Item 2: Slim Fit Denim Jacket */}
           <div className="grid grid-cols-[20%_80%] gap-3 border-b-2 border-stone-200 py-3">
-            <img
+            <Image
               src="/history/history2.png"
               alt="Slim Fit Denim Jacket"
               className="rounded-lg h-full object-cover"
@@ -77,7 +76,7 @@ const CartPage = () => {
 
             {/* Item 3: Minimalist Cotton Hoodie */}
             <div className="grid grid-cols-[20%_80%] gap-3 pt-3">
-              <img
+              <Image
                 src="/history/history3.png"
                 alt="Minimalist Cotton Hoodie"
                 className="rounded-lg h-full object-cover"

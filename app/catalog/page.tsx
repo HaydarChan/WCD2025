@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import AuctionCard from "@/components/AuctionCard";
 import TradeCard from "@/components/TradeCard";
-import { Button } from "@/components/ui/button";
 import AddProductModal from "@/components/catalog/AddProductModal";
 import AddTradeModal from "@/components/catalog/AddTradeModal";
 import AddAuctionModal from "@/components/catalog/AddAuctionModal";

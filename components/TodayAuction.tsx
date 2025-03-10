@@ -13,9 +13,9 @@ const TodayAuction = () => {
       <div className="px-10 md:px-20 lg:px-36 py-10 flex flex-col">
         <div className="flex justify-center">
           <p className="pr-1 w-fit relative inline-block pb-2 md:pb-4 text-2xl md:text-3xl lg:text-5xl">
-            Don't miss
+            Don&apos;t miss
             <span className="font-garamond italic font-bold text-3xl md:text-4xl lg:text-6xl ml-2 md:ml-3 bg-gradient-to-r from-[#9746f0] to-[#de3f24] inline-block text-transparent bg-clip-text tracking-tight">
-              Today's Auction!
+              Today&apos;s Auction!
             </span>
           </p>
         </div>
