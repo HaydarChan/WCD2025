@@ -38,24 +38,24 @@ const page = () => {
         <div className="w-full overflow-x-auto scrollbar-hide relative mt-5">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
             <TradeCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              store="Big Store"
-              place="West Jakarta"
+              name="Limited Edition Gaming Headset"
+              image="/trade/yourtrades1.png"
+              store="Tech Gear Store"
+              place="Jakarta"
               status="pending"
             />
             <TradeCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              store="Big Store"
-              place="West Jakarta"
+              name="Handmade Leather Boots"
+              image="/trade/yourtrades2.png"
+              store="Artisan Footwear"
+              place="Bandung"
               status="accepted"
             />
             <TradeCard
-              name="New Rules Shirt"
-              image="/product1.png"
-              store="Big Store"
-              place="West Jakarta"
+              name="Vintage Vinyl Record Player"
+              image="/trade/yourtrades3.png"
+              store="Retro Tunes"
+              place="Surabaya"
               status="denied"
             />
           </div>
@@ -85,34 +85,28 @@ const page = () => {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-5 gap-3">
           <TradeCard
-            name="New Rules Shirt"
-            image="/product1.png"
-            store="Big Store"
-            place="West Jakarta"
+            name="Oversized Hoodie"
+            image="/trade/trade1.png"
+            store="Cozy Wear"
+            place="Bandung"
           />
           <TradeCard
-            name="New Rules Shirt"
-            image="/product1.png"
-            store="Big Store"
-            place="West Jakarta"
+            name="Formal Blazer"
+            image="/trade/trade2.png"
+            store="Elegant Attire"
+            place="Jakarta"
           />
           <TradeCard
-            name="New Rules Shirt"
-            image="/product1.png"
-            store="Big Store"
-            place="West Jakarta"
+            name="Graphic T-Shirt"
+            image="/trade/trade3.png"
+            store="Urban Streetwear"
+            place="Surabaya"
           />
           <TradeCard
-            name="New Rules Shirt"
-            image="/product1.png"
-            store="Big Store"
-            place="West Jakarta"
-          />
-          <TradeCard
-            name="New Rules Shirt"
-            image="/product1.png"
-            store="Big Store"
-            place="West Jakarta"
+            name="Slim Fit Jeans"
+            image="/trade/trade4.png"
+            store="Denim Republic"
+            place="Yogyakarta"
           />
         </div>
       </div>
