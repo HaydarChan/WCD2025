@@ -18,109 +18,102 @@ const page = () => {
           </span>
         </p>
         <div className="grid lg:grid-cols-2 gap-3">
-          <div className="rounded-lg border-2 border-stone-200  w-full flex flex-col p-4">
-            <div className="grid grid-cols-[20%_80%] gap-3 border-b-2 border-stone-200 pb-3">
-              <Image
-                src={Product}
-                alt="Product"
-                className="rounded-lg h-full object-cover"
-              />
-              <div className="flex flex-col justify-between">
-                <div>
-                  <div className="flex justify-between items-center">
-                    <h1 className="text-sm md:text-base font-semibold">
-                      {" "}
-                      Gradient Graphic T-Shirt
-                    </h1>
-                    <FaTrashAlt className="mr-3 text-red-500" />
-                  </div>
-                  <p className="font-light text-xs md:text-sm">
-                    Size:
-                    <span className="font-light text-gray-500"> Large </span>
-                  </p>
-                  <p className="font-light text-xs md:text-sm">
-                    Color:
-                    <span className="font-light text-gray-500">Green Army</span>
-                  </p>
+        <div className="rounded-lg border-2 border-stone-200 w-full flex flex-col p-4">
+          {/* Item 1: Classic Leather Boots */}
+          <div className="grid grid-cols-[20%_80%] gap-3 border-b-2 border-stone-200 pb-3">
+            <img
+              src="/history/history1.png"
+              alt="Classic Leather Boots"
+              className="rounded-lg h-full object-cover"
+            />
+            <div className="flex flex-col justify-between">
+              <div>
+                <div className="flex justify-between items-center">
+                  <h1 className="text-sm md:text-base font-semibold">
+                    Classic Leather Boots
+                  </h1>
+                  <FaTrashAlt className="mr-3 text-red-500" />
                 </div>
-                <h1 className="pt-5 font-semibold text-base md:text-xl">
-                  {" "}
-                  Rp260.000{" "}
-                </h1>
+                <p className="font-light text-xs md:text-sm">
+                  Size: <span className="font-light text-gray-500"> 42 </span>
+                </p>
+                <p className="font-light text-xs md:text-sm">
+                  Color: <span className="font-light text-gray-500">Brown</span>
+                </p>
               </div>
+              <h1 className="pt-5 font-semibold text-base md:text-xl">
+                Rp1.500.000
+              </h1>
             </div>
+          </div>
 
-            <div className="grid grid-cols-[20%_80%] gap-3 border-b-2 border-stone-200 py-3">
-              <Image
-                src={Product}
-                alt="Product"
-                className="rounded-lg h-full object-cover"
-              />
-              <div className="flex flex-col justify-between">
-                <div>
-                  <div className="flex justify-between items-center">
-                    <h1 className="text-sm md:text-base font-semibold">
-                      {" "}
-                      Gradient Graphic T-Shirt
-                    </h1>
-                    <FaTrashAlt className="mr-3 text-red-500" />
-                  </div>
-                  <p className="font-light text-xs md:text-sm">
-                    Size:
-                    <span className="font-light text-gray-500"> Large </span>
-                  </p>
-                  <p className="font-light text-xs md:text-sm">
-                    Color:
-                    <span className="font-light text-gray-500">Green Army</span>
-                  </p>
+          {/* Item 2: Slim Fit Denim Jacket */}
+          <div className="grid grid-cols-[20%_80%] gap-3 border-b-2 border-stone-200 py-3">
+            <img
+              src="/history/history2.png"
+              alt="Slim Fit Denim Jacket"
+              className="rounded-lg h-full object-cover"
+            />
+            <div className="flex flex-col justify-between">
+              <div>
+                <div className="flex justify-between items-center">
+                  <h1 className="text-sm md:text-base font-semibold">
+                    Slim Fit Denim Jacket
+                  </h1>
+                  <FaTrashAlt className="mr-3 text-red-500" />
                 </div>
-                <h1 className="pt-5 font-semibold text-base md:text-xl">
-                  {" "}
-                  Rp260.000{" "}
-                </h1>
+                <p className="font-light text-xs md:text-sm">
+                  Size: <span className="font-light text-gray-500"> Medium </span>
+                </p>
+                <p className="font-light text-xs md:text-sm">
+                  Color: <span className="font-light text-gray-500">Dark Blue</span>
+                </p>
               </div>
+              <h1 className="pt-5 font-semibold text-base md:text-xl">
+                Rp950.000
+              </h1>
             </div>
+          </div>
+
+            {/* Item 3: Minimalist Cotton Hoodie */}
             <div className="grid grid-cols-[20%_80%] gap-3 pt-3">
-              <Image
-                src={Product}
-                alt="Product"
+              <img
+                src="/history/history3.png"
+                alt="Minimalist Cotton Hoodie"
                 className="rounded-lg h-full object-cover"
               />
               <div className="flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-center">
                     <h1 className="text-sm md:text-base font-semibold">
-                      {" "}
-                      Gradient Graphic T-Shirt
+                      Minimalist Cotton Hoodie
                     </h1>
                     <FaTrashAlt className="mr-3 text-red-500" />
                   </div>
                   <p className="font-light text-xs md:text-sm">
-                    Size:
-                    <span className="font-light text-gray-500"> Large </span>
+                    Size: <span className="font-light text-gray-500"> Large </span>
                   </p>
                   <p className="font-light text-xs md:text-sm">
-                    Color:
-                    <span className="font-light text-gray-500">Green Army</span>
+                    Color: <span className="font-light text-gray-500">Heather Gray</span>
                   </p>
                 </div>
                 <h1 className="pt-5 font-semibold text-base md:text-xl">
-                  {" "}
-                  Rp260.000{" "}
+                  Rp750.000
                 </h1>
               </div>
             </div>
           </div>
 
+
           <div className="h-fit rounded-lg border-[1px] border-stone-200  w-full flex flex-col p-4 space-y-3">
             <h1 className="font-bold text-xl"> Order Summary </h1>
             <div className="flex justify-between items-center">
               <p className="font-light text-sm">Subtotal</p>
-              <h1 className="font-semibold">Rp260.000</h1>
+              <h1 className="font-semibold">Rp3.200.000</h1>
             </div>
             <div className="flex justify-between items-center">
               <p className="font-light text-sm">Discount (-20%)</p>
-              <h1 className="font-semibold text-red-500">-Rp20.000</h1>
+              <h1 className="font-semibold text-red-500">-Rp640.000</h1>
             </div>
             <div className="flex justify-between items-center">
               <p className="font-light text-sm">Delivery Fee</p>
@@ -129,7 +122,7 @@ const page = () => {
             <hr className="bg-stone-200 w-full"></hr>
             <div className="flex justify-between items-center">
               <p>Total</p>
-              <h1 className="font-semibold text-lg">Rp260.000</h1>
+              <h1 className="font-semibold text-lg">Rp2.590.000</h1>
             </div>
             <div className="grid grid-cols-[70%_30%]">
               <div className="flex items-center flex-1 bg-gray-100 px-4 py-2 rounded-full">
