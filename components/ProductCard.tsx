@@ -1,6 +1,7 @@
 "use client";
 import { FiHome, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProductCardProps {
   name: string;
@@ -34,7 +35,7 @@ const ProductCard = ({
         )}
 
         {/* Product Image */}
-        <img src={image} alt={name} className="w-full object-contain" />
+        <Image src={image} alt={name} className="w-full object-contain" />
 
         {/* Content */}
         <div className="p-4">

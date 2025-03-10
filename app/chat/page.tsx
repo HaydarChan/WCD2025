@@ -94,13 +94,13 @@ const ChatPage = () => {
                   className="rounded-full"
                 />
                 <div className="bg-stone-50 p-3 rounded-lg shadow text-sm">
-                  Hi! I'm interested in your listing. Is it still available?
+                  Hi! I&apos;m interested in your listing. Is it still available?
                 </div>
               </div>
 
               <div className="flex justify-end">
                 <div className="bg-[#f56b27] text-white p-3 rounded-lg shadow text-sm">
-                  Yes! It’s still available. 😊
+                  Yes! It&apos;s still available. 😊
                 </div>
               </div>
 
