@@ -141,7 +141,7 @@ const CatalogPage = () => {
               </p>
             </div>
             <div className="w-full overflow-x-auto scrollbar-hide relative">
-              <div className="flex gap-5 pt-5 overflow-visible items-stretch lg:grid lg:grid-cols-5">
+              <div className="grid grid-cols-2 gap-5 pt-5 overflow-visible items-stretch lg:grid lg:grid-cols-5">
                 
                 {/* Add Product Button */}
                 <div className="flex items-center justify-center border-2 border-orange-500 border-dashed rounded-xl bg-orange-50/25 hover:bg-orange-100/25 min-w-[200px]">
